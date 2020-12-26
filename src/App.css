@@ -7,6 +7,10 @@
   pointer-events: none;
 }
 
+.container-fluid{
+  padding: 0 !important;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -36,3 +40,24 @@
     transform: rotate(360deg);
   }
 }
+
+.home-page img{
+  width:100%;
+  height: 680px;
+}
+
+.home-page .home-kopcinja{
+  padding-top: 40%;
+  
+  height: 25px;
+}
+
+.home-page .home-kopcinja .kopce-allFlights{
+  margin-left: 2%;
+}
+
+.opis-kompanija{
+  font-size: 20px;
+}
+
+
