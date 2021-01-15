@@ -13,7 +13,7 @@ class Meni extends React.Component{
                         <Nav className="mr-auto">
                             <Nav.Link href="/">Home</Nav.Link>
                             <Nav.Link href="/booked-flights">Booked Flights</Nav.Link>
-                            <Nav.Link href="/book-a-new-flight">Book a New Flight</Nav.Link>
+                            <Nav.Link href="/new-flight">Book a New Flight</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar> 

@@ -1,21 +1,22 @@
 
 import './App.css';
 import Home from "./components/home";
-import  newFlight  from "./components/newFligh";
+import  NewFlight  from "./components/newFlight";
 import {Route, Switch } from 'react-router-dom';
+import AllFlights from './components/allFlights';
 
 function App() {
   return (
     <div className="App">
 
-      <main>
-        <Switch>
-          <Route path="/" component={Home}/>
-          <Route path="/all-flights" component={Home}/>
-          <Route path="/book-a-new-flight" component={newFlight}/>
-          
-        </Switch>
-      </main>
+    <main>
+      <Switch>
+      <Route path="/" component={Home} exact />
+      <Route path="/new-flight" component={NewFlight} />
+      <Route path="/booked-flights" component={AllFlights}/>
+                
+      </Switch>
+    </main>
      
     </div>
   );
