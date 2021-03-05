@@ -79,8 +79,8 @@ class Home extends React.Component{
                      <div className="home-kopcinja">
                             <h1 className="naslov">Vinica Airways</h1>
                             <p className="opis-kompanija">We make dreams come true!</p>
-                            <Button href="/booked-flights" variant="outline-primary" className="kopce-newFlight">Book a new Flight</Button>
-                            <Button href="/new-flight" variant="outline-primary" className="kopce-allFlights">Booked Flights</Button>
+                            <Button href="/new-flight" variant="outline-primary" className="kopce-newFlight">Book a new Flight</Button>
+                            <Button href="/booked-flights" variant="outline-primary" className="kopce-allFlights">Booked Flights</Button>
                         </div>
                      </Col>
                 </Row>

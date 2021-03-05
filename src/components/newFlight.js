@@ -8,18 +8,33 @@ class NewFlight extends React.Component{
 
     constructor(props) {
         super(props);
-        this.state = { username: '' };
+        this.state = {
+            patnik:{
+                First_Name: props.firstName,
+                Last_Name: '',
+                Birth: '',
+                Passport_Number: '',
+            },
+
+            let:{
+                Flight_Number: "",
+                Departure: "",
+                Departure_date: "",
+                Destination: "",
+                Return_date: "",
+                CarryOn: 0,
+                CheckIn: 0,            
+                Trolley: 0,
+                PassangerId: 0,
+            }
+
+         };
       }
-      myChangeHandler = (event) => {
-        this.setState({username: event.target.value});
-        //console.log(this.state.username)
-      }
+      
       blabla = (event) => {
-          alert(this.state.username)
+          alert(this.state.patnik.firstName)
       }
     render(){
-        
-        
         return(
             
             <div className="New-Flight"> 
@@ -48,7 +63,7 @@ class NewFlight extends React.Component{
                             <Col xs={6} md={4}>
                                 <Form.Group>
                                     <Form.Label>First Name</Form.Label>
-                                    <Form.Control type="text" placeholder="Enter your First Name" required="True" name="firstName"  onChange={this.myChangeHandler} />
+                                    <Form.Control type="text" placeholder="Enter your First Name" required="True" name="firstName" value={this.state.patnik.First_Name}/>
                                 </Form.Group>
                                 
                             </Col>
@@ -175,7 +190,7 @@ class NewFlight extends React.Component{
                         
                         <Row>
                             <Col md={8}>
-                            <Button variant="primary" type="submit" >Submit</Button>
+                            <Button variant="primary" type="submit"  onClick={this.blabla}>Submit</Button>
                             </Col>
                         </Row>
                         </Form>
